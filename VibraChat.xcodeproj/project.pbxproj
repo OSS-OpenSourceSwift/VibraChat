@@ -14,6 +14,7 @@
 		41EFD5AC1B6D27F900FD90E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41EFD5AB1B6D27F900FD90E2 /* Images.xcassets */; };
 		41EFD5AF1B6D27F900FD90E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EFD5AD1B6D27F900FD90E2 /* LaunchScreen.xib */; };
 		41EFD5BB1B6D27F900FD90E2 /* VibraChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFD5BA1B6D27F900FD90E2 /* VibraChatTests.swift */; };
+		41EFD5C51B6D28D200FD90E2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFD5C41B6D28D200FD90E2 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		41EFD5B41B6D27F900FD90E2 /* VibraChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VibraChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EFD5B91B6D27F900FD90E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41EFD5BA1B6D27F900FD90E2 /* VibraChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibraChatTests.swift; sourceTree = "<group>"; };
+		41EFD5C41B6D28D200FD90E2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				41EFD5AB1B6D27F900FD90E2 /* Images.xcassets */,
 				41EFD5AD1B6D27F900FD90E2 /* LaunchScreen.xib */,
 				41EFD5A01B6D27F900FD90E2 /* Supporting Files */,
+				41EFD5C41B6D28D200FD90E2 /* ChatViewController.swift */,
 			);
 			path = VibraChat;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				41EFD5A71B6D27F900FD90E2 /* DetailViewController.swift in Sources */,
 				41EFD5A51B6D27F900FD90E2 /* MasterViewController.swift in Sources */,
+				41EFD5C51B6D28D200FD90E2 /* ChatViewController.swift in Sources */,
 				41EFD5A31B6D27F900FD90E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
