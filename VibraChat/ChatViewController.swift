@@ -7,29 +7,62 @@
 //
 
 import UIKit
+import MultipeerConnectivity
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, MCSessionDelegate {
 
+    var session: MCSession!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        if session == nil {
+            println("This could be bad...")
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func sendMessage(message: String) {
+        let messageAsData = message.dataUsingEncoding(NSUTF8StringEncoding)
+        session.sendData(messageAsData, toPeers:session.connectedPeers, withMode:.Reliable, error: nil)
     }
-    */
+    
+    func sendVibrate() {
+        for peer in session.connectedPeers as! [MCPeerID] {
+            session.sendResourceAtURL(NSURL(), withName: "Vibration", toPeer: peer) {error in println(error)}
+        }
+    }
+    
+    // session delegate
+    
+    func session(session: MCSession!, didReceiveData data: NSData!, fromPeer peerID: MCPeerID!) {
+        
+            
+        // DISPLAY MESSAGE
+        
+            
+    }
+    
+    func session(session: MCSession!,
+             peer peerID: MCPeerID!,
+    didChangeState state: MCSessionState) {
+        // LOG SOMETHING
+        
+    }
+    
+    func session(session: MCSession!,
+        didReceiveStream stream: NSInputStream!,
+        withName streamName: String!,
+        fromPeer peerID: MCPeerID!) {
+    
+    }
+    
+    // UNUSED - Boilerplate code
+    func session(session: MCSession!,
+didFinishReceivingResourceWithName resourceName: String!,
+         fromPeer peerID: MCPeerID!,
+          atURL localURL: NSURL!,
+         withError error: NSError!) {}
+    func session(session: MCSession!,
+didStartReceivingResourceWithName resourceName: String!,
+         fromPeer peerID: MCPeerID!,
+   withProgress progress: NSProgress!) {}
 
 }

@@ -15,6 +15,7 @@
 		41EFD5AF1B6D27F900FD90E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41EFD5AD1B6D27F900FD90E2 /* LaunchScreen.xib */; };
 		41EFD5BB1B6D27F900FD90E2 /* VibraChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFD5BA1B6D27F900FD90E2 /* VibraChatTests.swift */; };
 		41EFD5C51B6D28D200FD90E2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EFD5C41B6D28D200FD90E2 /* ChatViewController.swift */; };
+		41EFD5C71B6D2D9F00FD90E2 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EFD5C61B6D2D9E00FD90E2 /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		41EFD5B91B6D27F900FD90E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41EFD5BA1B6D27F900FD90E2 /* VibraChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VibraChatTests.swift; sourceTree = "<group>"; };
 		41EFD5C41B6D28D200FD90E2 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		41EFD5C61B6D2D9E00FD90E2 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41EFD5C71B6D2D9F00FD90E2 /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +66,7 @@
 		41EFD5941B6D27F800FD90E2 = {
 			isa = PBXGroup;
 			children = (
+				41EFD5C61B6D2D9E00FD90E2 /* MultipeerConnectivity.framework */,
 				41EFD59F1B6D27F900FD90E2 /* VibraChat */,
 				41EFD5B71B6D27F900FD90E2 /* VibraChatTests */,
 				41EFD59E1B6D27F900FD90E2 /* Products */,
@@ -84,11 +88,11 @@
 				41EFD5A21B6D27F900FD90E2 /* AppDelegate.swift */,
 				41EFD5A41B6D27F900FD90E2 /* MasterViewController.swift */,
 				41EFD5A61B6D27F900FD90E2 /* DetailViewController.swift */,
+				41EFD5C41B6D28D200FD90E2 /* ChatViewController.swift */,
 				41EFD5A81B6D27F900FD90E2 /* Main.storyboard */,
 				41EFD5AB1B6D27F900FD90E2 /* Images.xcassets */,
 				41EFD5AD1B6D27F900FD90E2 /* LaunchScreen.xib */,
 				41EFD5A01B6D27F900FD90E2 /* Supporting Files */,
-				41EFD5C41B6D28D200FD90E2 /* ChatViewController.swift */,
 			);
 			path = VibraChat;
 			sourceTree = "<group>";
